@@ -1,0 +1,137 @@
+
+body {
+    box-sizing: content-box;
+}
+
+
+.nav-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    list-style-type: none;
+    background-color: rgb(176, 172, 172);
+    box-shadow: 0 20px rgb(207, 204, 204);
+}
+.nav-menu a {
+    text-decoration: none;
+    color: rgb(103, 117, 22);
+}
+.nav-item {
+    margin: 4px;
+    padding: 4px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(176, 172, 172);
+}
+.section-container {
+    background-color: rgb(176, 172, 172);
+    text-align: center;
+}
+.section-container h2{
+    padding-top: 10px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: auto 50px;
+}
+
+.card-item {
+    background-color: aliceblue;
+    flex: 20%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.card-item img {
+    width: 100%;
+    height: 200px;
+}
+
+.footer div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.footer div p, h3 {
+    padding: 4px;
+    margin: 4px;
+}
+.form-control {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+.form-control img {
+    border-radius: 50%;
+    height: 200px;
+    margin: 12px;
+}
+.form-control form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+.form-row {
+    padding: 10px;
+    width: 300px;
+
+}
+
+.form-row input{
+    float: left;
+}
+
+input {
+    width: 169px;
+    height: 15px;
+}
+
+.submitButton button{
+    margin-top: 8px ;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(32, 206, 206);
+    color: rgb(16, 16, 15);
+    border: 1px solid green;
+    margin: 10px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
