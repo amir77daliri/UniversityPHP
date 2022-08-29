@@ -5,13 +5,24 @@
     <?php 
     if( isset($_POST['l_name'])   && !empty($_POST['l_name']) &&
         isset($_POST['u_name'])   && !empty($_POST['u_name']) &&
-        isset($_POST['capacity']) && !empty($_POST['capacity'])) 
-        {
-            $l_name = $_POST['l_name'];
-            $u_name = $_POST['u_name'];
-            $capacity = $_POST['capacity'];
-            $l_img = basename($_FILES["image"]["name"]);
+        isset($_POST['capacity']) && !empty($_POST['capacity'])
+        ) {
+            
+                $l_name = $_POST['l_name'];
+                $u_name = $_POST['u_name'];
+                $capacity = $_POST['capacity'];
+                $l_img = basename($_FILES["image"]["name"]);
+            
+        }else {
+            ?>
+            <script>
+                alert("برخی فیلدها مقداردهی نشده اند...");
+                location.replace('addLesson.php');
+            </script>
+            <?php
+            exit();
         }
+        
     
         $target_dir = "images/lessons/";
         $target_file = $target_dir . basename($_FILES["image"]["name"]);
